@@ -1,4 +1,4 @@
-# "Interpretability of Attention Mechanisms  in a Portuguese-Based Question Answering System about the Blue Amazon
+# Interpretability of Attention Mechanisms  in a Portuguese-Based Question Answering System about the Blue Amazon
 Repository for the ENIAC'21 paper "Interpretability of Attention Mechanisms  in a Portuguese-Based Question Answering System about the Blue Amazon"
 
 The full paper can be found: https://sol.sbc.org.br/index.php/eniac/article/view/18302
@@ -45,8 +45,8 @@ As described better in the paper, a code was created that verified the performan
 As with the SQuAD dataset (https://rajpurkar.github.io/SQuAD-explorer/), the questions are accompanied by a passage from which the answer is derived. In this case, translations into Portuguese were used and the results were: 
 
 F1-Score  | EM (Exact Match)  | Rouge-L
-------------- | -------------  | 
-53.1  | 22.3   | 53.4
+--------- | ----------------  | -----------
+53.1      | 22.3              | 53.4
 
 
 Disclaimer: the results presented here differ from what was presented in the paper because a manual analysis of the questions and answers was performed, which corrected errors. This improved the overal quality of the dataset, and ended up increasing the performance of the model. 
