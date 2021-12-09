@@ -14,8 +14,6 @@ File: Blue_Amazon_QA_dataset.csv
 
 This dataset is composed of 400 questions created by specialists about the blue amazon from wikipedia articles and the book "Coastal fisheries of Latin America and the Caribbean".
 
-For the creation of the questions, a bot was built which is found on github: 
-
 The file is Blue_Amazon_QA_dataset.csv and can be read using the pandas library: 
 
 ```
@@ -34,6 +32,12 @@ The columns of the dataset are:
 * Passagem: translation, via google translator, of the passage to Portuguese 
 * Questão: translation, via google translator, of the question to Portuguese 
 * Resposta: translation, via google translator, of the answer to Portuguese 
+
+## Check the codes for the Telegram Bot
+
+In order to create the dataset, a Telegram Bot was developed making the manual process of creation Question Answering pairs faster. Check section 4 of the paper for more information.
+
+All files can be found at: https://github.com/C4AI/blab-answerer-telegram-bot
 
 
 ## Portuguese BERT SQuAD model performance on the Blue Amazon QA Dataset
