@@ -51,6 +51,30 @@ F1-Score  | EM (Exact Match)  | Rouge-L
 
 Disclaimer: the results presented here differ from what was presented in the paper because a manual analysis of the questions and answers was performed, which corrected errors. This improved the overal quality of the dataset, and ended up increasing the performance of the model. 
 
+## Results of the Portuguese BERT SQuAD model performance on the Blue Amazon QA Dataset
+
+File: Results/Blue_Amazon_QA-SQuAD_Results.csv
+
+This this file is composed of the results of the BERT_Performance_Evaluation-Blue_Amazon_QA.ipynb, and has the true and generated answer for comparison.
+
+The file can be read using the pandas library: 
+
+```
+import pandas as pd
+
+df = pd.read_csv('Results/Blue_Amazon_QA-SQuAD_Results.csv', index_col = 0)
+```
+
+The columns of the File are:
+* question: Question in Portuguese
+* passages: Passage in Portuguese
+* true_answers: Annotated answer of the dataset
+* gen_answers: generated answer of the model bert-base-cased-squad-v1.1-portuguese
+* f1-score: F1-Score metric of true_answer with gen_answer
+* rouge_L: Rouge-L metric of true_answer with gen_answer
+* EM: Exact Match metric of true_answer with gen_answer
+
+
 ## Cite this work
 
 ```
